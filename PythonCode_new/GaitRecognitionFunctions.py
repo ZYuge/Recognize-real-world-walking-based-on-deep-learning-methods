@@ -729,3 +729,4 @@ def predict_data_unsupervised(X, model_path, window_size, overlap_rate):
     plt.ylabel('Possibility')
     plt.show()
     return X_final, y_predict
+
