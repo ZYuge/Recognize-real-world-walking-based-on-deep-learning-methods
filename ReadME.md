@@ -10,7 +10,17 @@ This model is suitable for older people who walk slowly. The data for model trai
 
 ## 1. How to use the algorithm
 
-Before running the code, you need to install the necessary packages in python environment (versions 3.7 and above), including: os, re, pickle, math, openpyxl,h5py,numpy,pandas,scipy,matplotlib,tensorflow, keras, and sklearn.  
+Before running the code, create a virtual environment with Python 3.11 or 3.12 and install the checked dependencies from `requirements.txt`:  
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # macOS or Linux
+# .venv\Scripts\Activate.ps1  # Windows PowerShell
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+`os`, `re`, `pickle`, and `math` are part of Python's standard library and do not need to be installed separately.  
 
 We provide the code for the whole process, including **data preprocessing** (data reading, balancing, augmentation and segmentation), **model training (Aim 1)** (model evaluation, fit,  and overfitting prevention), and **external validation process (Aim 2)** (data reading, model prediction, model performance evaluation).  
 

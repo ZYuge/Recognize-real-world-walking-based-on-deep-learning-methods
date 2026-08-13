@@ -718,7 +718,7 @@ def predict_data_unsupervised(X, model_path, window_size, overlap_rate):
     X_final = np.array(X_win)
 
     # load existing models
-    cnn_model = load_model(model_path)
+    cnn_model = load_model(model_path, compile=False)
 
     # predict y
     y_predict = cnn_model.predict(X_final)
